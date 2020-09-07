@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+# RDCovid
 
-You can use the [editor on GitHub](https://github.com/ReeZh/rdcovid/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+- Contributors: ReeZh
+- Tags:  WordPress
+- Author link: https://reezhdesign.com
+- Requires at least: 4.9
+- Tested up to: 5.4
+- Requires PHP: 7.4
+- Stable tag: 1.5.0
+- License: GPLv2 or later
+- License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This plugin create wordpress custom widget for COVID-19 Indonesia Update.
+Data grab from Open API Sources https://data.covid19.go.id/public/api/update.json
 
-### Markdown
+## Description
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This plugin display COVID-19 Indonesia Update
 
-```markdown
-Syntax highlighted code block
+## Installation
 
-# Header 1
-## Header 2
-### Header 3
+1. Upload the plugin folder into to the '/wp-content/plugins/' directory
+2. Activate the plugin through the \'Plugins\' menu in WordPress
 
-- Bulleted
-- List
+## Frequently Asked Questions
 
-1. Numbered
-2. List
+- Is there any configuration require for this plugin?
+No
 
-**Bold** and _Italic_ and `Code` text
+- Is all features of this plugin completely free?
+Yes
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Changelog
 
-### Jekyll Themes
+### 1.5.0
+* Second Version
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ReeZh/rdcovid/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### 1.0.0
+* First Version
 
-### Support or Contact
+## Upgrade Notice
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 1.5.0
+- Second version of the plugin
+- Adding WordPress Transient for caching API data
+
+### 1.0.0
+- First version of the plugin
+
+
+## Screenshots
