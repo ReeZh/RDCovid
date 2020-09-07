@@ -1,0 +1,76 @@
+:root {
+  --rdcovid-black: #21262c;
+  --rdcovid-white: #fafafa;
+  --rdcovid-border: #888888;
+  --rdcovid-gradient1: #fafafa;
+  --rdcovid-gradient2: #eaeaea;
+  --rdcovid-positif: #005bff;
+  --rdcovid-dirawat: #b80ce8;
+  --rdcovid-sembuh: #219653;
+  --rdcovid-meninggal: #d8232a;
+}
+
+[data-theme=dark] {
+  --rdcovid-black: #fafafa;
+  --rdcovid-white: #21262c;
+  --rdcovid-border: #dadada;
+  --rdcovid-gradient1: #21262c;
+  --rdcovid-gradient2: #888888;
+  --rdcovid-positif: #6594ea;
+  --rdcovid-dirawat: #b80ce8;
+  --rdcovid-sembuh: #219653;
+  --rdcovid-meninggal: #d8232a;
+}
+
+.rdcovid_container {
+  color: var(--rdcovid-black);
+  background: var(--rdcovid-white);
+  background: linear-gradient(15deg, var(--rdcovid-gradient1) 65%, var(--rdcovid-gradient2) 100%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--rdcovid-border);
+  border-radius: 5px;
+  padding: 2em 1em 1em;
+  margin-bottom: 1em;
+}
+
+.rdcovid_container div {
+  margin: 0 0.5em 1em;
+  text-align: center;
+}
+
+.rdcovid_container div span {
+  font-size: 0.85em;
+  font-weight: bold;
+  display: block;
+}
+
+.rdcovid_container span.date,
+.rdcovid_container span.number {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.rdcovid_pembaruan {
+  width: 100%;
+}
+
+.rdcovid_positif .number {
+  color: var(--rdcovid-positif);
+}
+
+.rdcovid_dirawat .number {
+  color: var(--rdcovid-dirawat);
+}
+
+.rdcovid_sembuh .number {
+  color: var(--rdcovid-sembuh);
+}
+
+.rdcovid_meninggal .number {
+  color: var(--rdcovid-meninggal);
+}
+
+/*# sourceMappingURL=rdcovid.css.map */
