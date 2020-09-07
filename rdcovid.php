@@ -183,16 +183,19 @@ final class RDCovid {
       // 0 Widgets because widgets_init runs at init priority 1.
       add_action( 'init', array( $this, 'init' ), 0 );
       if ( !is_admin() ) {
-        add_action( 'wp_enqueue_scripts', array( $this, 'rdcovid_styles' ) );
+        add_action( 'wp_enqueue_scripts', array( $this, 'rdcovid_styles_and_scripts' ) );
+        // add_action( 'wp_enqueue_scripts', array( $this, 'rdcovid_scripts' ) );
       }
 
       // load translated strings for plugin
       load_plugin_textdomain( 'rdcovid', false, dirname( $this->basename ) . '/languages/' );
     }
 
-    public function rdcovid_styles()
+    public function rdcovid_styles_and_scripts()
     {
       wp_enqueue_style('rdccss', plugins_url('/assets/rdcovid.min.css', __FILE__ ));
+      wp_register_script('rdcjs', plugin_dir_url( __FILE__ ) . 'assets/rdcovid.min.js', array('jquery'), '', true );
+      wp_enqueue_script( 'rdcjs' );
     }
 
     /**

@@ -67,8 +67,12 @@ class RDC_Widget extends WP_Widget {
 		<div class="rdcovid_positif">Positif <span class="number">' . $this->totpositif . '</span></div>
 		<div class="rdcovid_dirawat">Dirawat <span class="number">' . $this->totdirawat . '</span></div>
 		<div class="rdcovid_sembuh">Sembuh <span class="number">' . $this->totsembuh . '</span></div>
-		<div class="rdcovid_meninggal">Meninggal <span class="number">' . $this->totmeninggal . '</span></div>
+		<div class="rdcovid_meninggal">Meninggal <span class="number">' . $this->totmeninggal . '</span></div>';
+		echo '
+		<div class="d-block w-100">
+			<label aria-hidden="true" class="switch" for="rdcSwitch"><input type="checkbox" id="rdcSwitch"><span class="toggler round"></span></label>
 		</div>';
+		echo '</div>';
 	}
 
   public function widget( $args, $instance )
@@ -81,28 +85,8 @@ class RDC_Widget extends WP_Widget {
 		endif;
 
 		echo '<div id="rdcovid" class="textwidget">';
-
-		if ( ! $this->cur_data ) :
-			$result = $this->getdata();
-			$rdcovid_data = 'rdcovid_data';
-			$data_timeout = get_option('_transient_timeout_' . $rdcovid_data );
-		else :
-
-			if ( is_array( $result ) && ! is_wp_error( $result ) ) {
-				// Work with the $result data
-				echo 'Data Received';
-
-			} elseif ( is_object( $result ) && ! is_wp_error( $result ) )	{
-
-			} else {
-				// Work with the error
-				echo 'No Data Received.';
-			}
-
-		endif;
-
-    echo esc_html__( $instance['text'], 'rdcovid' );
 		$this->drawdata();
+    echo esc_html__( $instance['text'], 'rdcovid' );
 		echo '</div>';
     echo $args['after_widget'];
   }

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RDCovid 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rdcovid\n"
-"POT-Creation-Date: 2020-09-07 06:30:58+00:00\n"
+"POT-Creation-Date: 2020-09-07 14:34:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,17 +19,17 @@ msgstr ""
 msgid "RDCovid Support"
 msgstr ""
 
-#: includes/class-widgets.php:116 release/1.5.0/includes/class-widgets.php:195
+#: includes/class-widgets.php:100 release/1.5.0/includes/class-widgets.php:195
 #: release/svn/includes/class-widgets.php:195
 msgid "Title:"
 msgstr ""
 
-#: includes/class-widgets.php:120 release/1.5.0/includes/class-widgets.php:199
+#: includes/class-widgets.php:104 release/1.5.0/includes/class-widgets.php:199
 #: release/svn/includes/class-widgets.php:199
 msgid "Text:"
 msgstr ""
 
-#: rdcovid.php:299 release/1.5.0/rdcovid.php:299 release/svn/rdcovid.php:299
+#: rdcovid.php:302 release/1.5.0/rdcovid.php:299 release/svn/rdcovid.php:299
 msgid ""
 "ReeZh Design Covid-19 Widget WordPress Plugin is missing requirements and "
 "has been <a href=\"%s\">deactivated</a>. Please make sure all requirements "

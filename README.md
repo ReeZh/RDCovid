@@ -43,6 +43,7 @@ Yes
 ### 1.5.0
 - Second version of the plugin
 - Adding WordPress Transient for caching API data
+- Adding Toggler Switcher for Dark Mode
 
 ### 1.0.0
 - First version of the plugin
