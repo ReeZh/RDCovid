@@ -6,12 +6,6 @@
  * @package RDCovid
  */
 
- /**
-  * RDCovid Dashboard class.
-  *
-  * @since 1.5.0
-  */
-
 class RDC_Dashboard
 {
   /**

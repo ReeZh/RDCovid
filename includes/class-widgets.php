@@ -16,6 +16,10 @@ class RDC_Widget extends WP_Widget {
 	 */
 	protected $created = null;
 	protected $tanggalbaru = null;
+	protected $pluspositif = null;
+	protected $plusdirawat = null;
+	protected $plussembuh = null;
+	protected $plusmeninggal = null;
 	protected $totpositif = null;
 	protected $totdirawat = null;
 	protected $totsembuh = null;
@@ -49,28 +53,51 @@ class RDC_Widget extends WP_Widget {
 		}
 
 		$result = get_transient('rdcovid_data');
-		return $result;
-	}
 
-	public function drawdata()
-	{
-		$result = get_transient('rdcovid_data');
 		$this->tanggalbaru = date_i18n('l, j F Y G:i:s', strtotime(str_replace('/', '-', $result->update->penambahan->created )));
+
+		// Penambahan Kasus
+		$this->pluspositif = $result->update->penambahan->jumlah_positif;
+		$this->plusdirawat = $result->update->penambahan->jumlah_dirawat;
+		$this->plussembuh = $result->update->penambahan->jumlah_sembuh;
+		$this->plusmeninggal = $result->update->penambahan->jumlah_meninggal;
+
+		// Total Kasus
 		$this->totpositif = $result->update->total->jumlah_positif;
 		$this->totdirawat = $result->update->total->jumlah_dirawat;
 		$this->totsembuh = $result->update->total->jumlah_sembuh;
 		$this->totmeninggal = $result->update->total->jumlah_meninggal;
 
+
+		return $result;
+	}
+
+	public function drawdata()
+	{
+		$result = $this->getdata();
+
 		echo '<div class="rdcovid_container">';
 		echo '
-		<div class="rdcovid_pembaruan">Pembaruan Terakhir <span class="date">' . $this->tanggalbaru . '</span></div>
-		<div class="rdcovid_positif">Positif <span class="number">' . $this->totpositif . '</span></div>
-		<div class="rdcovid_dirawat">Dirawat <span class="number">' . $this->totdirawat . '</span></div>
-		<div class="rdcovid_sembuh">Sembuh <span class="number">' . $this->totsembuh . '</span></div>
-		<div class="rdcovid_meninggal">Meninggal <span class="number">' . $this->totmeninggal . '</span></div>';
+		<div class="rdcovid_pembaruan">' . __('Pembaruan Terakhir','rdcovid') .'<span class="date">' . $this->tanggalbaru . '</span></div>';
+		echo '<div class="rdcovid_positif">'. __('POSITIF','rdcovid');
+		echo '<span class="number">' . $this->totpositif . '</span>';
+		echo '<span class="small">+' . $this->pluspositif . '</span>';
+		echo '</div>';
+		echo '<div class="rdcovid_dirawat">' . __('DIRAWAT','rdcovid');
+		echo '<span class="number">' . $this->totdirawat . '</span>';
+		echo '<span class="small">+' . $this->plusdirawat . '</span>';
+		echo '</div>';
+		echo '<div class="rdcovid_sembuh">' . __('SEMBUH','rdcovid');
+		echo '<span class="number">' . $this->totsembuh . '</span>';
+		echo '<span class="small">+' . $this->plussembuh . '</span>';
+		echo '</div>';
+		echo '<div class="rdcovid_meninggal">' . __('MENINGGAL','rdcovid');
+		echo '<span class="number">' . $this->totmeninggal . '</span>';
+		echo '<span class="small">+' . $this->plusmeninggal . '</span>';
+		echo '</div>';
 		echo '
 		<div class="d-block w-100">
-			<label aria-hidden="true" class="switch" for="rdcSwitch"><input type="checkbox" id="rdcSwitch"><span class="toggler round"></span></label>
+			<label class="switch"><input type="checkbox" id="rdcSwitch"><span class="toggler round"></span></label>
 		</div>';
 		echo '</div>';
 	}
@@ -85,7 +112,9 @@ class RDC_Widget extends WP_Widget {
 		endif;
 
 		echo '<div id="rdcovid" class="textwidget">';
+
 		$this->drawdata();
+
     echo esc_html__( $instance['text'], 'rdcovid' );
 		echo '</div>';
     echo $args['after_widget'];
@@ -93,8 +122,9 @@ class RDC_Widget extends WP_Widget {
 
   public function form( $instance )
 	{
-    $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( '', 'rdcovid' );
+    $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'RDCovid', 'rdcovid' );
     $text = ! empty( $instance['text'] ) ? $instance['text'] : esc_html__( '', 'rdcovid' );
+		$location = ! empty( $instance['location'] ) ? $instance['location'] : esc_html__( 'Indonesia', 'rdcovid' );
     ?>
     <p>
 	    <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php echo esc_html__( 'Title:', 'rdcovid' ); ?></label>
@@ -105,6 +135,10 @@ class RDC_Widget extends WP_Widget {
       <textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'text' ) ); ?>" type="text" cols="30" rows="10"><?php echo esc_attr( $text ); ?>
 			</textarea>
     </p>
+		<p>
+	    <label for="<?php echo esc_attr( $this->get_field_id( 'location' ) ); ?>"><?php echo esc_html__( 'Location:', 'rdcovid' ); ?></label>
+      <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'location' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'location' ) ); ?>" type="text" value="<?php echo esc_attr( $location ); ?>">
+    </p>
   <?php }
 
   public function update( $new_instance, $old_instance )
@@ -112,6 +146,7 @@ class RDC_Widget extends WP_Widget {
 	  $instance = array();
 	  $instance['title'] = ( !empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 	  $instance['text'] = ( !empty( $new_instance['text'] ) ) ? $new_instance['text'] : '';
+		$instance['location'] = ( !empty( $new_instance['location'] ) ) ? $new_instance['location'] : '';
 	  return $instance;
   }
 
