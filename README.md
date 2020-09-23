@@ -32,6 +32,9 @@ Yes
 
 ## Changelog
 
+### 1.5.1
+* Third Version
+
 ### 1.5.0
 * Second Version
 
@@ -39,6 +42,11 @@ Yes
 * First Version
 
 ## Upgrade Notice
+
+### 1.5.1
+- Fixed transient for caching API data
+- Fixed localStorage data saving
+- Adding source of COVID-19 API data
 
 ### 1.5.0
 - Second version of the plugin

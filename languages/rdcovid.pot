@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RDCovid 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rdcovid\n"
-"POT-Creation-Date: 2020-09-07 14:34:47+00:00\n"
+"POT-Creation-Date: 2020-10-02 01:12:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,31 +13,66 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
 
-#: includes/class-dashboard.php:45
-#: release/1.5.0/includes/class-dashboard.php:45
-#: release/svn/includes/class-dashboard.php:45
+#: includes/class-dashboard.php:39
+#: release/1.5.0/includes/class-dashboard.php:39
+#: release/svn/includes/class-dashboard.php:39
 msgid "RDCovid Support"
 msgstr ""
 
-#: includes/class-widgets.php:100 release/1.5.0/includes/class-widgets.php:195
-#: release/svn/includes/class-widgets.php:195
-msgid "Title:"
+#: includes/class-widgets.php:82 release/1.5.0/includes/class-widgets.php:81
+#: release/svn/includes/class-widgets.php:81
+msgid "Pembaruan Terakhir"
 msgstr ""
 
-#: includes/class-widgets.php:104 release/1.5.0/includes/class-widgets.php:199
-#: release/svn/includes/class-widgets.php:199
-msgid "Text:"
+#: includes/class-widgets.php:83 release/1.5.0/includes/class-widgets.php:82
+#: release/svn/includes/class-widgets.php:82
+msgid "POSITIF"
 msgstr ""
 
-#: rdcovid.php:302 release/1.5.0/rdcovid.php:299 release/svn/rdcovid.php:299
-msgid ""
-"ReeZh Design Covid-19 Widget WordPress Plugin is missing requirements and "
-"has been <a href=\"%s\">deactivated</a>. Please make sure all requirements "
-"are available."
+#: includes/class-widgets.php:91 release/1.5.0/includes/class-widgets.php:86
+#: release/svn/includes/class-widgets.php:86
+msgid "DIRAWAT"
+msgstr ""
+
+#: includes/class-widgets.php:99 release/1.5.0/includes/class-widgets.php:90
+#: release/svn/includes/class-widgets.php:90
+msgid "SEMBUH"
+msgstr ""
+
+#: includes/class-widgets.php:107 release/1.5.0/includes/class-widgets.php:94
+#: release/svn/includes/class-widgets.php:94
+msgid "MENINGGAL"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "RDCovid"
+msgstr ""
+
+#: includes/class-widgets.php:148 release/1.5.0/includes/class-widgets.php:127
+#: release/svn/includes/class-widgets.php:127
+msgid "Indonesia"
+msgstr ""
+
+#: includes/class-widgets.php:151 release/1.5.0/includes/class-widgets.php:130
+#: release/svn/includes/class-widgets.php:130
+msgid "Title:"
+msgstr ""
+
+#: includes/class-widgets.php:155 release/1.5.0/includes/class-widgets.php:134
+#: release/svn/includes/class-widgets.php:134
+msgid "Text:"
+msgstr ""
+
+#: includes/class-widgets.php:160 release/1.5.0/includes/class-widgets.php:139
+#: release/svn/includes/class-widgets.php:139
+msgid "Location:"
+msgstr ""
+
+#: rdcovid.php:302 release/1.5.0/rdcovid.php:302 release/svn/rdcovid.php:302
+msgid ""
+"ReeZh Design Covid-19 Widget WordPress Plugin is missing requirements and "
+"has been <a href=\"%s\">deactivated</a>. Please make sure all requirements "
+"are available."
 msgstr ""
 
 #. Author URI of the plugin/theme
@@ -45,7 +80,7 @@ msgid "https://reezhdesign.com"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "ReeZh Design COVID-19 Widget WordPress Plugin."
+msgid "ReeZh Design COVID-19 WordPress Widget Plugin."
 msgstr ""
 
 #. Author of the plugin/theme

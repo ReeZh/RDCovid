@@ -2,7 +2,7 @@
 /**
  * Plugin Name: RDCovid
  * Plugin URI:  https://reezhdesign.com
- * Description: ReeZh Design COVID-19 Widget WordPress Plugin.
+ * Description: ReeZh Design COVID-19 WordPress Widget Plugin.
  * Version:     1.5.0
  * Author:      ReeZh Design
  * Author URI:  https://reezhdesign.com

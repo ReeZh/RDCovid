@@ -6,12 +6,6 @@
  * @package RDCovid
  */
 
- /**
-  * RDCovid Dashboard class.
-  *
-  * @since 1.5.0
-  */
-
 class RDC_Dashboard
 {
   /**
@@ -46,8 +40,8 @@ class RDC_Dashboard
   }
 
   public function rdc_support_content_widget() {
-    echo '<p>This plugin support for COVID-19 Indonesia Update, more to come.</p>
-		<p>created by <a href="https://reezhdesign.com" target="_blank" rel="noopener">ReeZh Design</a></p>';
+    echo '<p>This plugin support for COVID-19 Indonesia Update, more to come.</p>';
+		echo '<p>created by <a href="https://reezhdesign.com" target="_blank" rel="noopener">ReeZh Design</a></p>';
   }
 
 }
