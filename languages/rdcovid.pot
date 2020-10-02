@@ -4,7 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RDCovid 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rdcovid\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2020-10-02 01:12:47+00:00\n"
+=======
+"POT-Creation-Date: 2020-09-22 16:28:30+00:00\n"
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,27 +23,47 @@ msgstr ""
 msgid "RDCovid Support"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/class-widgets.php:82 release/1.5.0/includes/class-widgets.php:81
+=======
+#: includes/class-widgets.php:81 release/1.5.0/includes/class-widgets.php:81
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 #: release/svn/includes/class-widgets.php:81
 msgid "Pembaruan Terakhir"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/class-widgets.php:83 release/1.5.0/includes/class-widgets.php:82
+=======
+#: includes/class-widgets.php:82 release/1.5.0/includes/class-widgets.php:82
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 #: release/svn/includes/class-widgets.php:82
 msgid "POSITIF"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/class-widgets.php:91 release/1.5.0/includes/class-widgets.php:86
+=======
+#: includes/class-widgets.php:86 release/1.5.0/includes/class-widgets.php:86
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 #: release/svn/includes/class-widgets.php:86
 msgid "DIRAWAT"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/class-widgets.php:99 release/1.5.0/includes/class-widgets.php:90
+=======
+#: includes/class-widgets.php:90 release/1.5.0/includes/class-widgets.php:90
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 #: release/svn/includes/class-widgets.php:90
 msgid "SEMBUH"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/class-widgets.php:107 release/1.5.0/includes/class-widgets.php:94
+=======
+#: includes/class-widgets.php:94 release/1.5.0/includes/class-widgets.php:94
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 #: release/svn/includes/class-widgets.php:94
 msgid "MENINGGAL"
 msgstr ""
@@ -48,22 +72,38 @@ msgstr ""
 msgid "RDCovid"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/class-widgets.php:148 release/1.5.0/includes/class-widgets.php:127
+=======
+#: includes/class-widgets.php:127 release/1.5.0/includes/class-widgets.php:127
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 #: release/svn/includes/class-widgets.php:127
 msgid "Indonesia"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/class-widgets.php:151 release/1.5.0/includes/class-widgets.php:130
+=======
+#: includes/class-widgets.php:130 release/1.5.0/includes/class-widgets.php:130
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 #: release/svn/includes/class-widgets.php:130
 msgid "Title:"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/class-widgets.php:155 release/1.5.0/includes/class-widgets.php:134
+=======
+#: includes/class-widgets.php:134 release/1.5.0/includes/class-widgets.php:134
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 #: release/svn/includes/class-widgets.php:134
 msgid "Text:"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/class-widgets.php:160 release/1.5.0/includes/class-widgets.php:139
+=======
+#: includes/class-widgets.php:139 release/1.5.0/includes/class-widgets.php:139
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 #: release/svn/includes/class-widgets.php:139
 msgid "Location:"
 msgstr ""

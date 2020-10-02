@@ -69,6 +69,7 @@ class RDC_Widget extends WP_Widget {
 			RDC_Transients::sync();
 		}
 		$result = get_transient('rdcovid_data');
+<<<<<<< HEAD
 		$this->setdata( $result );
 		return $result;
 	}
@@ -76,12 +77,37 @@ class RDC_Widget extends WP_Widget {
 	public function drawdata()
 	{
 		$this->getdata();
+=======
+
+		$this->tanggalbaru = date_i18n('l, j F Y G:i:s', strtotime(str_replace('/', '-', $result->update->penambahan->created )));
+
+		// Penambahan Kasus
+		$this->pluspositif = $result->update->penambahan->jumlah_positif;
+		$this->plusdirawat = $result->update->penambahan->jumlah_dirawat;
+		$this->plussembuh = $result->update->penambahan->jumlah_sembuh;
+		$this->plusmeninggal = $result->update->penambahan->jumlah_meninggal;
+
+		// Total Kasus
+		$this->totpositif = $result->update->total->jumlah_positif;
+		$this->totdirawat = $result->update->total->jumlah_dirawat;
+		$this->totsembuh = $result->update->total->jumlah_sembuh;
+		$this->totmeninggal = $result->update->total->jumlah_meninggal;
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
+
+
+		return $result;
+	}
+
+	public function drawdata()
+	{
+		$result = $this->getdata();
 
 		echo '<div class="rdcovid_container">';
 		echo '
 		<div class="rdcovid_pembaruan">' . __('Pembaruan Terakhir','rdcovid') .'<span class="date">' . $this->tanggalbaru . '</span></div>';
 		echo '<div class="rdcovid_positif">'. __('POSITIF','rdcovid');
 		echo '<span class="number">' . $this->totpositif . '</span>';
+<<<<<<< HEAD
 		echo '<span class="small">';
 		if ( $this->pluspositif > 0) {
 			echo '+';
@@ -120,6 +146,25 @@ class RDC_Widget extends WP_Widget {
 		<div class="d-block w-100">
 			<span class="small">RDCovid WordPress Widget Plugin</span>
 			<span class="small">sumber data: https://covid19.go.id</span>
+=======
+		echo '<span class="small">+' . $this->pluspositif . '</span>';
+		echo '</div>';
+		echo '<div class="rdcovid_dirawat">' . __('DIRAWAT','rdcovid');
+		echo '<span class="number">' . $this->totdirawat . '</span>';
+		echo '<span class="small">+' . $this->plusdirawat . '</span>';
+		echo '</div>';
+		echo '<div class="rdcovid_sembuh">' . __('SEMBUH','rdcovid');
+		echo '<span class="number">' . $this->totsembuh . '</span>';
+		echo '<span class="small">+' . $this->plussembuh . '</span>';
+		echo '</div>';
+		echo '<div class="rdcovid_meninggal">' . __('MENINGGAL','rdcovid');
+		echo '<span class="number">' . $this->totmeninggal . '</span>';
+		echo '<span class="small">+' . $this->plusmeninggal . '</span>';
+		echo '</div>';
+		echo '
+		<div class="d-block w-100">
+			<label class="switch"><input type="checkbox" id="rdcSwitch"><span class="toggler round"></span></label>
+>>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
 		</div>';
 		echo '</div>';
 	}
