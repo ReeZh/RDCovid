@@ -3,7 +3,7 @@
  * Plugin Name: RDCovid
  * Plugin URI:  https://reezhdesign.com
  * Description: ReeZh Design COVID-19 WordPress Widget Plugin.
- * Version:     1.5.0
+ * Version:     1.5.2
  * Author:      ReeZh Design
  * Author URI:  https://reezhdesign.com
  * Donate link: https://reezhdesign.com
@@ -14,11 +14,11 @@
  * @link https://reezhdesign.com
  *
  * @package RDCovid
- * @version 1.5.0
+ * @version 1.5.2
  */
 
 /**
- * Copyright (c) 2020 ReeZh Design (email : hireus@reezhdesign.com)
+ * Copyright (c) 2020 ReeZh Design (email : reezhdesign@gmail.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2 or, at
@@ -72,7 +72,7 @@ final class RDCovid {
      * @var  string
      * @since  1.0.0
      */
-    const VERSION = '1.0.0';
+    const VERSION = '1.5.2';
 
     /**
      * URL of plugin directory
@@ -131,6 +131,15 @@ final class RDCovid {
     protected $dashboard;
 
     /**
+     * Instance of RDC_Widget
+     *
+     * @since 1.5.1
+     * @var RDC_Widget
+     */
+    protected $widget;
+
+
+    /**
      * Creates or returns an instance of this class.
      *
      * @since  1.0.0
@@ -164,8 +173,9 @@ final class RDCovid {
     {
       // Attach other plugin classes to the base plugin class.
       $this->transients = new RDC_Transients( $this );
-      $this->dashboard = new RDC_Dashboard( $this );
-      require( self::dir( 'includes/class-widgets.php' ) );
+      $this->dashboard  = new RDC_Dashboard( $this );
+      $this->widget     = new RDC_Widget( $this );
+      // require( self::dir( 'includes/class-widgets.php' ) );
 
     } // END OF PLUGIN CLASSES FUNCTION
 
@@ -339,6 +349,7 @@ final class RDCovid {
         case 'path':
         case 'transients':
         case 'dashboard':
+        case 'widget':
             return $this->$field;
         default:
             throw new Exception( 'Invalid ' . __CLASS__ . ' property: ' . $field );

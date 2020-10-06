@@ -1,11 +1,16 @@
 <?php
 /**
- * RDCovid Dashboard.
+ * RDCovid Dashboard
  *
  * @since   1.5.0
  * @package RDCovid
  */
 
+ /**
+  * RDCovid Dashboard.
+  *
+  * @since 1.0.0
+  */
 class RDC_Dashboard
 {
   /**
@@ -36,12 +41,12 @@ class RDC_Dashboard
 
   public function rdc_support_dashboard_widget() {
     global $wp_meta_boxes;
-    wp_add_dashboard_widget('rdc_support_widget', __('RDCovid Support','rdcovid'), array( $this, 'rdc_support_content_widget' ) );
+    wp_add_dashboard_widget('rdc_support_widget', __('RDCovid Bantuan','rdcovid'), array( $this, 'rdc_support_content_widget' ) );
   }
 
   public function rdc_support_content_widget() {
-    echo '<p>This plugin support for COVID-19 Indonesia Update, more to come.</p>';
-		echo '<p>created by <a href="https://reezhdesign.com" target="_blank" rel="noopener">ReeZh Design</a></p>';
+    echo '<p>' . __('RDCovid menampilkan data statistik COVID-19 Indonesia terbaru, masih banyak yang akan dikembangkan.','rdcovid') . '</p>';
+		echo '<p>dibuat oleh <a href="https://reezhdesign.com" target="_blank" rel="noopener">ReeZh Design</a></p>';
   }
 
 }

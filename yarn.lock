@@ -1680,6 +1680,13 @@ grunt-phpcs@^0.4.0:
   resolved "https://registry.yarnpkg.com/grunt-phpcs/-/grunt-phpcs-0.4.0.tgz#a08d625fc64465e453b2bd93f810b2a81e94bdaa"
   integrity sha1-oI1iX8ZEZeRTsr2T+BCyqB6Uvao=
 
+grunt-po2mo@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/grunt-po2mo/-/grunt-po2mo-0.1.2.tgz#908f73c1c00086385acc83c0740ee360ef52741b"
+  integrity sha1-kI9zwcAAhjhazIPAdA7jYO9SdBs=
+  dependencies:
+    sync-exec "^0.4.0"
+
 grunt-replace@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/grunt-replace/-/grunt-replace-1.0.1.tgz#90a79532fb89041fe427c87d425238b0f886651a"
@@ -3600,6 +3607,11 @@ symbol-observable@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.1.tgz#8340fc4702c3122df5d22288f88283f513d3fdd4"
   integrity sha1-g0D8RwLDEi310iKI+IKD9RPT/dQ=
+
+sync-exec@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/sync-exec/-/sync-exec-0.4.0.tgz#37582e7a04faf38cd6e53ea20445b99f992f6933"
+  integrity sha1-N1guegT684zW5T6iBEW5n5kvaTM=
 
 tar-fs@^2.0.0:
   version "2.1.0"

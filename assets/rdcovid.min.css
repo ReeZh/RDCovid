@@ -1,9 +1,5 @@
 /**
-<<<<<<< HEAD
- * RDCovid - v1.5.1 - 2020-10-02
-=======
- * RDCovid - v1.5.0 - 2020-09-22
->>>>>>> b27d5d3b0a6a34c73df64da0b20917ef2299a098
+ * RDCovid - v1.5.2 - 2020-10-06
  * ReeZh <reezhdesign@gmail.com> (https://reezhdesign.com)
  *
  * Copyright (c) 2020;
