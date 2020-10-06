@@ -2,7 +2,7 @@
 /**
  * RDCovid Widget
  *
- * @since   1.5.1
+ * @since   1.5.2
  * @package RDCovid
  */
 
