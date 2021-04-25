@@ -6,7 +6,7 @@
 - Requires at least: 4.9
 - Tested up to: 5.4
 - Requires PHP: 7.4
-- Stable tag: 1.5.1
+- Stable tag: 1.5.4
 - License: GPLv2 or later
 - License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,15 @@ Yes
 
 ## Changelog
 
+### 1.5.4
+* Sixth Version
+
+### 1.5.3
+* Fifth Version
+
+### 1.5.2
+* Fourth Version
+
 ### 1.5.1
 * Third Version
 
@@ -42,6 +51,18 @@ Yes
 * First Version
 
 ## Upgrade Notice
+
+### 1.5.4
+- Adding Google Schema Announcement
+- Fixing layout 
+- Fixing JS to natif
+- removing rdcovid.min.js
+
+### 1.5.3
+- Fixed transient
+
+### 1.5.2
+- Fixed error Widgets
 
 ### 1.5.1
 - Fixed transient for caching API data
