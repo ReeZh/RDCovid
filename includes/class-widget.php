@@ -283,8 +283,8 @@ class RDC_Widget extends WP_Widget
   public function draw_footer()
   {
     echo '<div class="switch">';
-    echo '<input type="checkbox" id="rdcSwitch"><span class="toggler round" onclick="rdc_checkDarkmode()"></span>';
-    echo '<label for="rdcSwitch"><span class="rdlabeltext" aria-label="Pilih Mode">' . __('mode gelap / terang','rdcovid') . '</span></label>';
+    echo '<label><span class="rdlabeltext" aria-label="Pilih Mode">' . __('mode gelap / terang','rdcovid') . '</span><input type="checkbox" id="rdcSwitch"></label>';
+    echo '<span class="toggler round" onclick="rdc_checkDarkmode()"></span>';
     echo '</div>';
     echo '<div>';
     echo '<span class="small">RDCovid WordPress Widget Plugin</span><span class="small">sumber data: https://covid19.go.id</span>';

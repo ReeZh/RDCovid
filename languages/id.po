@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RDCovid 1.5.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rdcovid\n"
-"POT-Creation-Date: 2021-04-25 13:13:15+00:00\n"
+"POT-Creation-Date: 2021-04-25 14:24:48+00:00\n"
 "PO-Revision-Date: 2021-04-25 19:24+0700\n"
 "Last-Translator: \n"
 "Language-Team: ReeZh Design <reezhdesign@gmail.com>\n"
@@ -136,7 +136,7 @@ msgstr "Jenis Kelamin"
 msgid "Kelompok Umur"
 msgstr "Kelompok Umur"
 
-#: includes/class-widget.php:287
+#: includes/class-widget.php:286
 msgid "mode gelap / terang"
 msgstr "mode gelap / terang"
 
