@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RDCovid 1.5.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rdcovid\n"
-"POT-Creation-Date: 2021-04-25 19:24+0700\n"
+"POT-Creation-Date: 2021-04-25 13:13:15+00:00\n"
 "PO-Revision-Date: 2021-04-25 19:24+0700\n"
 "Last-Translator: \n"
 "Language-Team: ReeZh Design <reezhdesign@gmail.com>\n"
@@ -145,9 +145,17 @@ msgstr "mode gelap / terang"
 msgid "Indonesia"
 msgstr "Indonesia"
 
-#: includes/class-widget.php:398
+#. Plugin Name of the plugin/theme
 msgid "RDCovid"
 msgstr "RDCovid"
+
+#: includes/class-widget.php:404
+msgid "Title:"
+msgstr "Judul:"
+
+#: includes/class-widget.php:408
+msgid "Text:"
+msgstr "Text:"
 
 #: includes/class-widget.php:413
 msgid "Location:"
@@ -158,7 +166,6 @@ msgid "Show Details?"
 msgstr "Tampilkan Detil?"
 
 #: rdcovid.php:395
-#, php-format
 msgid ""
 "ReeZh Design Covid-19 Widget WordPress Plugin is missing requirements and "
 "has been <a href=\"%s\">deactivated</a>. Please make sure all requirements "
@@ -167,20 +174,17 @@ msgstr ""
 "ReeZh Design Covid-19 Widget WordPress Plugin kehilangan kebutuhan dan telah "
 "di <a href=\"%s\">nonaktifkan</a>. Mohon pastikan semua kebutuhan terpenuhi."
 
-#~ msgid "Title:"
-#~ msgstr "Judul:"
+#. Author URI of the plugin/theme
+msgid "https://reezhdesign.com"
+msgstr "https://reezhdesign.com"
 
-#~ msgid "Text:"
-#~ msgstr "Text:"
+#. Description of the plugin/theme
+msgid "ReeZh Design COVID-19 WordPress Widget Plugin."
+msgstr "ReeZh Design COVID-19 WordPress Widget Plugin."
 
-#~ msgid "https://reezhdesign.com"
-#~ msgstr "https://reezhdesign.com"
-
-#~ msgid "ReeZh Design COVID-19 WordPress Widget Plugin."
-#~ msgstr "ReeZh Design COVID-19 WordPress Widget Plugin."
-
-#~ msgid "ReeZh Design"
-#~ msgstr "ReeZh Design"
+#. Author of the plugin/theme
+msgid "ReeZh Design"
+msgstr "ReeZh Design"
 
 #, fuzzy
 #~ msgid "Pembaruan Propinsi"
