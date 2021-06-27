@@ -6,7 +6,7 @@
  * @package RDCovid
  */
 
-defined( 'ABSPATH' ) or die( 'Error Bro!' );
+defined('ABSPATH') or die('Error Bro!');
 
 class RDC_Announcements
 {
@@ -16,7 +16,7 @@ class RDC_Announcements
   * @var RDCovid
   * @since  1.0.0
   */
-  protected $plugin = null;
+    protected $plugin = null;
 
   /**
   * Constructor.
@@ -25,104 +25,104 @@ class RDC_Announcements
   *
   * @param  RDCovid $plugin Main plugin object.
   */
-  public function __construct( $plugin )
-  {
-    $this->plugin = $plugin;
-    $this->hooks();
-  }
+    public function __construct($plugin)
+    {
+        $this->plugin = $plugin;
+        $this->hooks();
+    }
 
-  public function hooks()
-  {
-    add_action( 'wp_head', array( $this, 'do_announce' ) );
-  }
+    public function hooks()
+    {
+        add_action('wp_head', array( $this, 'do_announce' ));
+    }
   
-  public function generate_info()
-  {
-    $rdcovid_data = get_option( 'rdcovid_data', true );
-    $rdcovid_last_update = get_option( 'rdcovid_last_update', true );
+    public function generate_info()
+    {
+        $rdcovid_data = get_option('rdcovid_data', true);
+        $rdcovid_last_update = get_option('rdcovid_last_update', true);
 
-    // Total Kasus
-    $totpositif = $rdcovid_data->update->total->jumlah_positif;
-    $totdirawat = $rdcovid_data->update->total->jumlah_dirawat;
-    $totsembuh = $rdcovid_data->update->total->jumlah_sembuh;
-    $totmeninggal = $rdcovid_data->update->total->jumlah_meninggal;
+      // Total Kasus
+        $totpositif = $rdcovid_data->update->total->jumlah_positif;
+        $totdirawat = $rdcovid_data->update->total->jumlah_dirawat;
+        $totsembuh = $rdcovid_data->update->total->jumlah_sembuh;
+        $totmeninggal = $rdcovid_data->update->total->jumlah_meninggal;
 
-    // Penambahan Kasus
-    $pluspositif = $rdcovid_data->update->penambahan->jumlah_positif;
-    $plusdirawat = $rdcovid_data->update->penambahan->jumlah_dirawat;
-    $plussembuh = $rdcovid_data->update->penambahan->jumlah_sembuh;
-    $plusmeninggal = $rdcovid_data->update->penambahan->jumlah_meninggal;
+      // Penambahan Kasus
+        $pluspositif = $rdcovid_data->update->penambahan->jumlah_positif;
+        $plusdirawat = $rdcovid_data->update->penambahan->jumlah_dirawat;
+        $plussembuh = $rdcovid_data->update->penambahan->jumlah_sembuh;
+        $plusmeninggal = $rdcovid_data->update->penambahan->jumlah_meninggal;
 
-    echo strtoupper( __('Data Statistik COVID-19 Indonesia Terbaru','rdcovid') );
-    echo ': ' . __('Positif','rdcovid') . ': ' . $totpositif . ', ' .
-    __('Dirawat','rdcovid') . ': ' . absint($totdirawat) . ', ' .
-    __('Sembuh','rdcovid') . ': ' . absint($totsembuh) . ', ' .
-    __('Meninggal','rdcovid') . ': ' . $totmeninggal . ' dengan penambahan [ ';
-    echo __('positif','rdcovid') . ' : ';
-    if ( $pluspositif > 0 ) {
-      echo '+' . $pluspositif . ', ';
-    } elseif ( $pluspositif < 0 ) {
-      echo '(-' . $pluspositif . '), ';
-    } else {
-      echo $pluspositif . ', ';
+        echo strtoupper(__('Latest Indonesian COVID-19 Statistics Data', 'rdcovid'));
+        echo ': ' . __('Positive', 'rdcovid') . ': ' . $totpositif . ', ' .
+        __('Treated', 'rdcovid') . ': ' . absint($totdirawat) . ', ' .
+        __('Recover', 'rdcovid') . ': ' . absint($totsembuh) . ', ' .
+        __('Died', 'rdcovid') . ': ' . $totmeninggal . __(' with addition', 'rdcovid') . ' [';
+
+        echo __('positive', 'rdcovid') . ' : ';
+        if ($pluspositif > 0) {
+            echo '+' . $pluspositif . ', ';
+        } elseif ($pluspositif < 0) {
+            echo '(-' . $pluspositif . '), ';
+        } else {
+            echo $pluspositif . ', ';
+        }
+
+        echo __('treated', 'rdcovid') . ' : ';
+        if ($plusdirawat > 0) {
+            echo '+' . $plusdirawat . ', ';
+        } elseif ($plusdirawat < 0) {
+            echo '(-' . absint($plusdirawat) . '), ';
+        } else {
+            echo $plusdirawat . ', ';
+        }
+
+        echo __('recover', 'rdcovid') . ' : ';
+        if ($plussembuh > 0) {
+            echo '+' . $plussembuh . ', ';
+        } elseif ($plussembuh < 0) {
+            echo '(-' . absint($plussembuh) . '), ';
+        } else {
+            echo $plussembuh . ', ';
+        }
+
+        echo __('died', 'rdcovid') . ' : ';
+        if ($plusmeninggal > 0) {
+            echo '+' . $plusmeninggal;
+        } else {
+            echo $plusmeninggal;
+        }
+        echo ']. ';
+
+        echo 'Source: <a href=\"' . get_permalink() . '#rdcovid' . '\">RDCovid</a>';
     }
 
-    echo __('dirawat','rdcovid') . ' : ';
-    if ( $plusdirawat > 0 ) {
-      echo '+' . $plusdirawat . ', ';
-    } elseif ( $plusdirawat < 0 ) {
-      echo '(-' . absint($plusdirawat) . '), ';
-    } else {
-      echo $plusdirawat . ', ';
+    public function date_posted()
+    {
+        $rdcovid_last_update = get_option('rdcovid_last_update', true);
+        if ($rdcovid_last_update) {
+            echo $rdcovid_last_update;
+        }
     }
 
-    echo __('sembuh','rdcovid') . ' : ';
-    if ( $plussembuh > 0 ) {
-      echo '+' . $plussembuh . ', ';
-    } elseif ( $plussembuh < 0 ) {
-      echo '(-' . absint($plussembuh) . '), ';
-    } else {
-      echo $plussembuh . ', ';
+    public function date_expired()
+    {
+        $rdcovid_last_update = get_option('rdcovid_last_update', true);
+        if ($rdcovid_last_update) {
+            $date = date_create($rdcovid_last_update);
+            date_add($date, date_interval_create_from_date_string("30 days"));
+            echo date_format($date, "Y-m-d H:i:s");
+        }
     }
 
-    echo __('meninggal','rdcovid') . ' : ';
-    if ( $plusmeninggal > 0 ) {
-      echo '+' . $plusmeninggal;
-    } else {
-      echo $plusmeninggal;
-    }
-    echo ']. ';
-
-    echo 'Source: <a href=\"' . get_permalink() . '#rdcovid' . '\">RDCovid</a>';
-
-
-  }
-
-  public function date_posted()
-  {
-    $rdcovid_last_update = get_option( 'rdcovid_last_update', true );
-    if ($rdcovid_last_update) {
-      echo $rdcovid_last_update;
-    }
-  }
-
-  public function date_expired()
-  {
-    $rdcovid_last_update = get_option( 'rdcovid_last_update', true );
-    if ($rdcovid_last_update) {
-      $date=date_create($rdcovid_last_update);
-      date_add($date,date_interval_create_from_date_string("30 days"));
-      echo date_format($date,"Y-m-d H:i:s");
-    }
-  }
-
-  public function do_announce()
-  { ?>
+    public function do_announce()
+    {
+        ?>
 <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "SpecialAnnouncement",
-    "name": "Data Statistik COVID-19 Indonesia Terbaru",
+    "name": "<?php echo __('Latest Indonesian COVID-19 Statistics Data', 'rdcovid'); ?>",
     "text": "<?php $this->generate_info(); ?>",
     "datePosted": "<?php $this->date_posted(); ?>",
     "expires": "<?php $this->date_expired(); ?>",
@@ -137,7 +137,6 @@ class RDC_Announcements
   }
   ]
 </script>
-<?php
-  }
-
+        <?php
+    }
 }

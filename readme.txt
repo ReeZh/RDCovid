@@ -53,10 +53,11 @@ Yes
 ## Upgrade Notice
 
 ### 1.5.4
+- Safe loading style and script on widget active
 - Adding Google Schema Announcement
 - Fixing layout 
 - Fixing JS to natif
-- removing rdcovid.min.js
+- updating rdcovid.min.js
 
 ### 1.5.3
 - Fixed transient

@@ -1,182 +1,182 @@
-# Copyright (C) 2021 ReeZh Design
+# Copyright (C) 2020 ReeZh Design
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
 "Project-Id-Version: RDCovid 1.5.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rdcovid\n"
-"POT-Creation-Date: 2021-06-27 14:50:00+00:00\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
-"Last-Translator: ReeZh Design <reezhdesign@gmail.com>\n"
+"POT-Creation-Date: 2021-06-27 13:45:52+00:00\n"
+"PO-Revision-Date: 2021-06-27 20:20+0700\n"
+"Last-Translator: \n"
 "Language-Team: ReeZh Design <reezhdesign@gmail.com>\n"
 "Language: id\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Country: Indonesia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
-"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
-"X-Poedit-Basepath: ../\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-Bookmarks: \n"
-"X-Textdomain-Support: yes\n"
-"X-Poedit-Language: Indonesia\n"
-"X-Generator: grunt-wp-i18n 1.0.3\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: javascripts\n"
+"X-Poedit-SearchPathExcluded-2: stylesheets\n"
+"X-Poedit-SearchPathExcluded-3: release\n"
 
 #: includes/class-announcements.php:56 includes/class-announcements.php:125
 #: includes/class-dashboard.php:60
 msgid "Latest Indonesian COVID-19 Statistics Data"
-msgstr ""
+msgstr "Data Statistik COVID-19 Indonesia Terbaru"
 
 #: includes/class-announcements.php:57 includes/class-dashboard.php:62
 #: includes/class-dashboard.php:69
 msgid "Positive"
-msgstr ""
+msgstr "Positif"
 
 #: includes/class-announcements.php:58 includes/class-dashboard.php:63
 #: includes/class-dashboard.php:78
 msgid "Treated"
-msgstr ""
+msgstr "Dirawat"
 
 #: includes/class-announcements.php:59 includes/class-dashboard.php:64
 #: includes/class-dashboard.php:87
 msgid "Recover"
-msgstr ""
+msgstr "Sembuh"
 
 #: includes/class-announcements.php:60 includes/class-dashboard.php:65
 #: includes/class-dashboard.php:96
 msgid "Died"
-msgstr ""
+msgstr "Meninggal"
 
 #: includes/class-announcements.php:60
 msgid " with addition"
-msgstr ""
+msgstr " dengan penambahan"
 
 #: includes/class-announcements.php:62
 msgid "positive"
-msgstr ""
+msgstr "positif"
 
 #: includes/class-announcements.php:71
 msgid "treated"
-msgstr ""
+msgstr "dirawat"
 
 #: includes/class-announcements.php:80
 msgid "recover"
-msgstr ""
+msgstr "sembuh"
 
 #: includes/class-announcements.php:89
 msgid "died"
-msgstr ""
+msgstr "meninggal"
 
 #: includes/class-dashboard.php:40
 msgid "RDCovid Help"
-msgstr ""
+msgstr "RDCovid Bantuan"
 
 #: includes/class-dashboard.php:61
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: includes/class-dashboard.php:67
 msgid "Increase"
-msgstr ""
+msgstr "Penambahan"
 
 #: includes/class-dashboard.php:104 includes/class-widget.php:162
 #: includes/class-widget.php:210 includes/class-widget.php:301
 msgid "Last Update"
-msgstr ""
+msgstr "Tanggal Update"
 
 #: includes/class-dashboard.php:109
 msgid "Current Province: "
-msgstr ""
+msgstr "Propinsi Sekarang: "
 
 #: includes/class-dashboard.php:114
 msgid "This site using External Cache"
-msgstr ""
+msgstr "Situs ini menggunakan External Cache"
 
 #: includes/class-dashboard.php:116
 msgid "This site using Internal Cache"
-msgstr ""
+msgstr "Situs ini menggunakan Internal Cache"
 
 #: includes/class-dashboard.php:118
 msgid "Cache Status"
-msgstr ""
+msgstr "Status Penyimpanan"
 
 #: includes/class-dashboard.php:124
 msgid ""
 "RDCovid displays the latest Indonesian COVID-19 statistics, there is still "
 "much to be developed."
 msgstr ""
+"RDCovid menampilkan statistik COVID-19 Indonesia terbaru, masih banyak yang "
+"harus dikembangkan."
 
 #: includes/class-dashboard.php:125
 msgid "created by "
-msgstr ""
+msgstr "dibuat oleh "
 
 #: includes/class-widget.php:163 includes/class-widget.php:212
 #: includes/class-widget.php:303
 msgid "POSITIVE"
-msgstr ""
+msgstr "POSITIF"
 
 #: includes/class-widget.php:171 includes/class-widget.php:220
 #: includes/class-widget.php:311
 msgid "TREATED"
-msgstr ""
+msgstr "DIRAWAT"
 
 #: includes/class-widget.php:179 includes/class-widget.php:223
 #: includes/class-widget.php:319
 msgid "RECOVER"
-msgstr ""
+msgstr "SEMBUH"
 
 #: includes/class-widget.php:187 includes/class-widget.php:231
 #: includes/class-widget.php:327
 msgid "DIED"
-msgstr ""
+msgstr "MENINGGAL"
 
 #: includes/class-widget.php:245
 msgid "Gender"
-msgstr ""
+msgstr "Jenis Kelamin"
 
 #: includes/class-widget.php:254
 msgid "Age Group"
-msgstr ""
+msgstr "Kelompok Umur"
 
 #: includes/class-widget.php:257
 msgid " age: "
-msgstr ""
+msgstr " umur: "
 
 #: includes/class-widget.php:276
 msgid "dark / light"
-msgstr ""
+msgstr "gelap / terang"
 
 #: includes/class-widget.php:281
 msgid "data source: "
-msgstr ""
+msgstr "sumber data: "
 
 #: includes/class-widget.php:290 includes/class-widget.php:394
 #: includes/class-widget.php:409
 msgid "Indonesia"
-msgstr ""
+msgstr "Indonesia"
 
 #. Plugin Name of the plugin/theme
 msgid "RDCovid"
-msgstr ""
+msgstr "RDCovid"
 
 #: includes/class-widget.php:398
 msgid "Title:"
-msgstr ""
+msgstr "Judul:"
 
 #: includes/class-widget.php:402
 msgid "Text:"
-msgstr ""
+msgstr "Text:"
 
 #: includes/class-widget.php:407
 msgid "Location:"
-msgstr ""
+msgstr "Lokasi:"
 
 #: includes/class-widget.php:423
 msgid "Show Details?"
-msgstr ""
+msgstr "Tampilkan Detil?"
 
 #: rdcovid.php:380
 msgid ""
@@ -184,15 +184,79 @@ msgid ""
 "has been <a href=\"%s\">deactivated</a>. Please make sure all requirements "
 "are available."
 msgstr ""
+"ReeZh Design Covid-19 Widget WordPress Plugin kehilangan kebutuhan dan telah "
+"di <a href=\"%s\">nonaktifkan</a>. Mohon pastikan semua kebutuhan terpenuhi."
 
 #. Author URI of the plugin/theme
 msgid "https://reezhdesign.com"
-msgstr ""
+msgstr "https://reezhdesign.com"
 
 #. Description of the plugin/theme
 msgid "ReeZh Design COVID-19 WordPress Widget Plugin."
-msgstr ""
+msgstr "ReeZh Design COVID-19 WordPress Widget Plugin."
 
 #. Author of the plugin/theme
 msgid "ReeZh Design"
-msgstr ""
+msgstr "ReeZh Design"
+
+#~ msgid "Data Statistik COVID-19 Indonesia Terbaru"
+#~ msgstr "Data Statistik COVID-19 Indonesia Terbaru"
+
+#~ msgid "Dirawat"
+#~ msgstr "Dirawat"
+
+#~ msgid "Sembuh"
+#~ msgstr "Sembuh"
+
+#~ msgid "Meninggal"
+#~ msgstr "Meninggal"
+
+#~ msgid "dirawat"
+#~ msgstr "dirawat"
+
+#~ msgid "sembuh"
+#~ msgstr "sembuh"
+
+#~ msgid "meninggal"
+#~ msgstr "meninggal"
+
+#~ msgid "RDCovid Bantuan"
+#~ msgstr "RDCovid Bantuan"
+
+#~ msgid "Penambahan"
+#~ msgstr "Penambahan"
+
+#~ msgid ""
+#~ "RDCovid menampilkan data statistik COVID-19 Indonesia terbaru, masih "
+#~ "banyak yang akan dikembangkan."
+#~ msgstr ""
+#~ "RDCovid menampilkan data statistik COVID-19 Indonesia terbaru, masih "
+#~ "banyak yang akan dikembangkan."
+
+#~ msgid "Pembaruan Terakhir"
+#~ msgstr "Pembaruan Terakhir"
+
+#~ msgid "DIRAWAT"
+#~ msgstr "DIRAWAT"
+
+#~ msgid "SEMBUH"
+#~ msgstr "SEMBUH"
+
+#~ msgid "MENINGGAL"
+#~ msgstr "MENINGGAL"
+
+#~ msgid "Jenis Kelamin"
+#~ msgstr "Jenis Kelamin"
+
+#~ msgid "Kelompok Umur"
+#~ msgstr "Kelompok Umur"
+
+#~ msgid "mode gelap / terang"
+#~ msgstr "mode gelap / terang"
+
+#, fuzzy
+#~ msgid "Pembaruan Propinsi"
+#~ msgstr "Pembaruan Terakhir"
+
+#~ msgid "RDCovid Support"
+#~ msgstr "RDCovid Support"
