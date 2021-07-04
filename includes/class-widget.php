@@ -449,18 +449,17 @@ class RDC_Widget extends WP_Widget
             wp_enqueue_style('rdccss', esc_url( plugins_url( '/assets/rdcovid.min.css', dirname(__FILE__) ) ) );
             wp_register_script('rdcjs', esc_url( plugins_url( '/assets/rdcovid.min.js', dirname(__FILE__) ) ), array(), '', true);
             wp_enqueue_script('rdcjs');
+            add_filter( 'style_loader_tag', array( $this, 'preload_header' ), 10, 4 );
         }
-        // add_action( 'wp_footer', array($this, 'preload_header'), 10 );
     }
 
     // Register Preload Header
     public function preload_header()
     {
         if (is_active_widget(false, false, 'rdcovid')) {
-        echo '<link rel="preload" href="' . esc_url( plugins_url( "/assets/rdcovid.min.css", dirname(__FILE__) ) ) . '" type="text/css" as="style" onload="this.onload=null;this.rel=\'stylesheet\'" />';
+            echo '<link rel="preload" href="' . esc_url( plugins_url( "/assets/rdcovid.min.css", dirname(__FILE__) ) ) . '" type="text/css" as="style" onload="this.onload=null;this.rel=\'stylesheet\'" />';
         }
     }
-    // add_action( 'wp_head', 'reezh_preload_header', 999 );
 }
 
 $rdcwidget = new RDC_Widget();
